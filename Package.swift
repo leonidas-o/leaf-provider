@@ -1,9 +1,10 @@
+// swift-tools-version:4.0
 import PackageDescription
 
 let package = Package(
     name: "LeafProvider",
     dependencies: [
-        .Package(url: "https://github.com/vapor/vapor.git", majorVersion: 2),
-        .Package(url: "https://github.com/vapor/leaf.git", majorVersion: 2),
+        .package(url: "https://github.com/vapor/vapor.git", from: "2.2.1"),
+        .package(url: "https://github.com/vapor/leaf.git", branch("beta"),
     ]
 )
