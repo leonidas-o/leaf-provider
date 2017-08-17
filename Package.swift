@@ -10,9 +10,11 @@ let package = Package(
     targets: [
         .target(
             name: "LeafProvider",
-            dependencies: ["Leaf"]),
+            dependencies: ["Vapor", "Leaf"]
+        ),
         .testTarget(
             name: "LeafProviderTests",
-            dependencies: ["LeafProvider"]),
+            dependencies: ["LeafProvider"]
+        ),
     ]
 )
